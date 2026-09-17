@@ -22,17 +22,20 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://portfolio-bice-seven-zt7w7pg923.vercel.app"),
   title: `${profile.name} — ${profile.role}`,
   description: profile.tagline,
   openGraph: {
     title: `${profile.name} — ${profile.role}`,
     description: profile.tagline,
     type: "website",
+    images: ["/headshot.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: `${profile.name} — ${profile.role}`,
     description: profile.tagline,
+    images: ["/headshot.jpg"],
   },
 };
 
