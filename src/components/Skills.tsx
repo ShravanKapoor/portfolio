@@ -1,4 +1,4 @@
-import { skillGroups, exploring } from "@/lib/data";
+import { skillGroups } from "@/lib/data";
 
 export default function Skills() {
   return (
@@ -23,17 +23,6 @@ export default function Skills() {
             </ul>
           </div>
         ))}
-      </div>
-
-      <div className="mt-12 pt-8 border-t border-border">
-        <h3 className="font-mono-data text-xs text-accent mb-3">Currently exploring</h3>
-        <ul className="space-y-1.5">
-          {exploring.map((item) => (
-            <li key={item} className="text-sm text-text-muted">
-              {item}
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );

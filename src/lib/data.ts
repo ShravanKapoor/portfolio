@@ -244,12 +244,6 @@ export const skillGroups = [
   },
 ];
 
-export const exploring = [
-  "Agentic AI frameworks — LangChain and LangGraph",
-  "Multi-agent orchestration patterns for recruitment automation",
-  "Deepening SQL and Power BI for analyst-track roles",
-];
-
 export const achievements: { title: string; detail: string }[] = [
   // PLACEHOLDER — no achievements on record yet.
   // Add entries here: { title: "...", detail: "..." }
