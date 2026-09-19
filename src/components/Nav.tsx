@@ -1,3 +1,4 @@
+import { profile } from "@/lib/data";
 import ThemeToggle from "./ThemeToggle";
 
 const links = [
@@ -15,7 +16,7 @@ export default function Nav() {
         aria-label="Primary"
         className="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between"
       >
-        <a href="#top" className="font-display text-lg font-semibold tracking-tight">
+        <a href="#top" className="font-display text-lg font-semibold tracking-tight whitespace-nowrap">
           Shravan Kapoor
         </a>
         <div className="flex items-center gap-6">
@@ -28,6 +29,14 @@ export default function Nav() {
               </li>
             ))}
           </ul>
+          <a
+            href={profile.resumeUrl}
+            download="Shravan_Kapoor_Resume.pdf"
+            className="inline-flex items-center whitespace-nowrap rounded-md bg-accent text-bg px-3 py-1.5 text-sm font-medium hover:brightness-110 transition"
+          >
+            <span className="lg:hidden">Resume</span>
+            <span className="hidden lg:inline">Download resume</span>
+          </a>
           <ThemeToggle />
         </div>
       </nav>
