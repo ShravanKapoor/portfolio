@@ -1,4 +1,5 @@
 import { profile } from "@/lib/data";
+import ContactForm from "./ContactForm";
 
 export default function Footer() {
   const emailReady = !profile.email.startsWith("PLACEHOLDER");
@@ -11,6 +12,8 @@ export default function Footer() {
       <p className="text-text-muted max-w-xl mb-8">
         {profile.availability}. The fastest way to reach me is email or LinkedIn.
       </p>
+
+      <ContactForm />
 
       <div className="flex flex-wrap justify-center gap-4">
         {emailReady ? (
